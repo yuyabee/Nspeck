@@ -2,14 +2,23 @@ import React from 'react';
 import { Alert, TouchableOpacity, FlatList, StyleSheet, Text, View } from 'react-native';
 
 
+
 export default class CreateScreen extends React.Component {
+  state = {
+    general: {},
+    site: {},
+    exterior: {},
+    bathrooms: {},
+    kitchen: {},
+    roofing: {},
+    interior: {},
+  };
+
   static navigationOptions = {
     title: 'Create New Inspection',
   };
 
   render() {
-    /* Go ahead and delete ExpoConfigView and replace it with your
-     * content, we just wanted to give you a quick view of your config */
     return (
       <View style={styles.container}>
         <FlatList
@@ -20,13 +29,16 @@ export default class CreateScreen extends React.Component {
             {key: 'Bathrooms'},
             {key: 'Kitchen'},
             {key: 'Roofing'},
-            {key: 'Structure'},
             {key: 'Interior'},
           ]}
           renderItem={({item}) => (
             <TouchableOpacity
               onPress={() => {
-                this.props.navigation.navigate('Inspection', {name: item})
+                this.props.navigation.navigate('Inspection', {
+                  name: item["key"].toLowerCase(),
+                  state: this.state,
+                  update: this.update
+                })
               }}
             >
               <Text style={styles.item}>{item.key}</Text>
@@ -35,7 +47,12 @@ export default class CreateScreen extends React.Component {
         />
       </View>
     );
-  }
+  };
+
+  update = (item, value) => {
+    console.log(this.state[item])
+    this.setState({item: value})
+  };
 }
 
 const styles = StyleSheet.create({
