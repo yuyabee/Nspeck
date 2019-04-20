@@ -487,7 +487,28 @@
             [
               {
                 "description" :
+                  [
+                    "3 Tab Shingle",
+                    "Concrete Tile",
+                    "Clay Barrel Tile",
+                    "Metal",
+                    "Gravel",
+                    "Roll Roofing",
+                  ],
+                "condition" :
+                  [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further Evaluation required",
+                      "Not present",
+                      "Not inspected",
+                  ],
               }
+            ],
+        "approximate_roof_age" :
+            [
+              "Five "
             ]
       }
 
