@@ -38,7 +38,22 @@ const properties = {
     photos: [],
     comments: [],
   },
-
+  site: {
+    site_grading_description: "",
+    site_grading_condition: "",
+    vegetation_description: "",
+    vegetation_condition: "",
+    retaining_walls_description: "",
+    retaining_walls_condition: "",
+    driveway_description: "",
+    driveway_condition: "",
+    walkways_description: "",
+    walkways_condition: "",
+    steps_stoops_condition: "",
+    steps_stoops_description: "",
+    patios_decks_description: "",
+    patios_decks_condition: "",
+  },
 }
 
 export default class CreateScreen extends React.Component {
@@ -188,6 +203,157 @@ export default class CreateScreen extends React.Component {
             "Not present",
             "Not inspected",
           ]
+        }
+      }],
+      "site": [{
+        "site_grading_description": {
+          "field_type": "select_field",
+          "options": [
+            "Mostly level",
+            "Sloped away from structure",
+            "Sloped away toward structure",
+          ]
+        },
+        "site_grading_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "vegetation_description": {
+          "field_type": "select_field",
+          "options": [
+            "Growing against structure",
+            "Not growing against structure",
+            "Generally overgrown",
+            "Generally maintained",
+            "Not inspected",
+          ]
+        },
+        "vegetation_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "retaining_walls_description": {
+          "field_type": "select_field",
+          "options": [
+            "Concrete",
+            "Masonry",
+            "Wood",
+            "Not inspected",
+          ]
+        },
+        "retaining_walls_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "driveway_description": {
+          "field_type": "select_field",
+          "options": [
+            "Concrete",
+            "Stamped Concrete",
+            "Stone",
+            "Brick",
+            "Pavers",
+            "Gravel",
+            "Asphalt",
+          ],
+        },
+        "driveway_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "walkways_description": {
+          "field_type": "select_field",
+          "options": [
+                "Concrete",
+                "Stamped Concrete",
+                "Brick",
+                "Pavers",
+                "Gravel",
+                "Asphalt",
+              ],
+        },
+        "walkways_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "steps_stoops_description": {
+          "field_type": "select_field",
+          "options": [
+            "Concrete",
+            "Stamped Concrete",
+            "Brick",
+            "Pavers",
+            "Gravel",
+            "Asphalt",
+          ],
+        },
+        "steps_stoops_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "patios_decks_description": {
+          "field_type": "select_field",
+          "options": [
+            "Concrete",
+            "Stamped Concrete",
+            "Brick",
+            "Pavers",
+            "Stone",
+            "Wood",
+          ],
+        },
+        "patios_decks_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
         }
       }]
     };
