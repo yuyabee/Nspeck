@@ -1330,9 +1330,81 @@
                   "Interior",
                   "By Water heater",
                   "Not located",
-                ]
+                  "Not present",
+                  "Not inspected",
+                ],
             }
-          ]
+          ],
+        "sewer_system" :
+          [
+            {
+              "description" :
+                [
+                  "Public",
+                  "Septic System",
+                  "Unknown",
+                  "Not Present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "waste_pipe_material" :
+          [
+            {
+              "description" :
+                [
+                  "PVC",
+                  "Cast Iron",
+                  "Copper",
+                  "Galvanized Steel",
+                  "ABS Plastic",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "sump_pump" :
+          [
+            {
+              "description" :
+                [
+                  "Sealed Crock",
+                  "Standard Crock",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "location_of_fuel_shutoff" :
+          [
+            {
+              "description" :
+                [
+                  "At Meter",
+                  "Not Located",
+                ],
+              "condition" :
+                [
+                  "Not Present",
+                  "Not Inspected",
+                ],
+            }
+          ],
+          
       }
     ]
 
