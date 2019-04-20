@@ -2077,10 +2077,33 @@
   "interior" :
     [
       {
-
+        "floors" :
+          [
+            {
+              "description" :
+                [
+                  "Tile",
+                  "Marble",
+                  "Stone",
+                  "Carpet",
+                  "Wood",
+                  "Wood Laminate",
+                  "Vinyl",
+                  "Cork",
+                  "Linoleum",
+                  "Bamboo",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
       }
-    ]
-
-
-
+    ],
   }
