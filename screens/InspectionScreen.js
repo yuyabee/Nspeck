@@ -12,6 +12,7 @@ import {
   Image,
   TextInput,
   Picker,
+  Switch,
 } from 'react-native';
 import { ImagePicker, Permissions } from 'expo';
 
@@ -79,8 +80,74 @@ const properties = {
   roofing: {
     inspect_method_description: "",
     inspect_method_condition: "",
-    roof_design_description: "",
-    roof_design_condition: "",
+    design_description: "",
+    design_condition: "",
+    covering_description: "",
+    covering_condition: "",
+    approximate_roof_age: "",
+    ventilation_present: false,
+    ventilation_description: "",
+    ventilation_condition: "",
+    chimney_description: "",
+    chimney_condition: "",
+    sky_lights_description: "",
+    sky_lights_condition: "",
+    flashings_description: "",
+    flashings_condition: "",
+    soffit_fascia_description: "",
+    soffit_fascia_condition: "",
+    gutters_downspouts_description: "",
+    gutters_downspouts_condition: "",
+  },
+  structure: {
+    foundation_types_description: "",
+    foundation_types_condition: "",
+    foundation_material_description: "",
+    foundation_material_condition: "",
+    signs_of_water_penetration: false,
+    water_penetration_description: "",
+    water_penetration_condition: "",
+    prior_waterproofing_description: "",
+    prior_waterproofing_condition: "",
+    floor_description: "",
+    floor_condition: "",
+    subflooring_description: "",
+    subflooring_condition: "",
+    wall_description: "",
+    wall_condition: "",
+  },
+  electrical: {
+    type_of_service_description: "",
+    type_of_service_condition: "",
+    main_disconnect_location_description: "",
+    main_disconnect_location_condition: "",
+    service_panel_location_description: "",
+    service_panel_location_condition: "",
+  },
+  hvac: {
+    system_type_description: "",
+    system_type_condition: "",
+  },
+  heating: {
+    location_description: "",
+    location_condition: "",
+    type_of_equipment_description: "",
+    type_of_equipment_condition: "",
+    manufacturer_description: "",
+  },
+  cooling: {
+    energy_source: "",
+    type_of_equipment_description: "",
+    type_of_equipment_condition: "",
+    condenser_make: "",
+    condenser_size: "",
+    expansion_coil_make: "",
+  },
+  plumbing: {
+    water_service: "",
+    supply_pump_material_description: "",
+    supply_pump_material_condition: "",
+    location_of_water_shutoff: "",
   }
 }
 
@@ -583,7 +650,7 @@ export default class CreateScreen extends React.Component {
             "Not inspected",
           ]
         },
-        "roof_design_description": {
+        "design_description": {
           "field_type": "select_field",
           "options": [
             "Gable",
@@ -594,9 +661,547 @@ export default class CreateScreen extends React.Component {
             "Flat",
           ],
         },
-        "roof_design_condition": {
+        "design_condition": {
           "field_type": "select_field",
           "options": [
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "covering_description": {
+          "field_type": "select_field",
+          "options": [
+            "3 Tab Shingle",
+            "Concrete Tile",
+            "Clay Barrel Tile",
+            "Metal",
+            "Gravel",
+            "Roll Roofing",
+          ],
+        },
+        "covering_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "approximate_roof_age": {
+          "field_type": "select_field",
+          "options": [
+            "0 - 2 years",
+            "3 - 5 years",
+            "6 - 8 years",
+            "9 - 10 years",
+            "11+ years",
+          ],
+        },
+        "ventilation_present": {
+          "field_type": "switch_field",
+        },
+        "ventilation_description": {
+          "field_type": "select_field",
+          "options": [
+            "Roof",
+            "Soffit",
+            "Power Ventilator",
+            "Gable Ends",
+            "Ridge Vents",
+            "Turbine",
+          ]
+        },
+        "ventilation_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "chimney_description": {
+          "field_type": "select_field",
+          "options": [
+            "Masonry",
+            "Brick",
+            "Stone",
+            "Metal",
+            "Wood Frame",
+          ]
+        },
+        "chimney_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "sky_lights_description": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "sky_lights_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "flashings_description": {
+          "field_type": "select_field",
+          "options": [
+            "Metal",
+            "Tar/Caulk",
+            "Asphalt",
+          ]
+        },
+        "flashings_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "soffit_fascia_description": {
+          "field_type": "select_field",
+          "options": [
+            "Wood",
+            "Aluminum",
+            "Vinyl",
+          ]
+        },
+        "soffit_fascia_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "gutters_downspouts_description": {
+          "field_type": "select_field",
+          "options": [
+            "Metal",
+            "Plastic",
+            "Hidden Box",
+          ]
+        },
+        "gutters_downspouts_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+      }],
+      "structure": [{
+        "foundation_types_description": {
+          "field_type": "select_field",
+          "options": [
+            "Basement",
+            "Slab on Grade",
+            "Floating Slab",
+            "Crawl Space",
+          ]
+        },
+        "foundation_types_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "foundation_material_description": {
+          "field_type": "select_field",
+          "options": [
+            "Poured Concrete",
+            "Concrete Block",
+            "Wood",
+            "Stone",
+          ],
+        },
+        "foundation_material_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "signs_of_water_penetration": {
+          "field_type": "switch_field",
+        },
+        "water_penetration_description": {
+          "field_type": "select_field",
+          "options": [
+            "Moisture",
+            "Dampness",
+            "Stains",
+            "Efflorescence",
+            "Mildew",
+          ]
+        },
+        "water_penetration_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "prior_waterproofing_description": {
+          "field_type": "select_field",
+          "options": [
+            "Perimeter Drain",
+            "Expoxy Injection",
+            "Plastic Panels",
+            "Surface Patches",
+            "Gutter Type Drain",
+          ]
+        },
+        "prior_waterproofing_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "floor_description": {
+          "field_type": "select_field",
+          "options": [
+            "Concrete Slab",
+            "Wood Frame",
+            "Engineered I-Joist",
+            "Truss",
+          ]
+        },
+        "floor_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "subflooring_description": {
+          "field_type": "select_field",
+          "options": [
+            "Plywood",
+            "Oriented Strand Board",
+            "Solid Wood Plank",
+            "Tongue and Groove Wood",
+          ]
+        },
+        "subflooring_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "wall_description": {
+          "field_type": "select_field",
+          "options": [
+            "Full Masonry",
+            "Wood Frame",
+          ]
+        },
+        "wall_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+      }],
+      "electrical": [{
+        "type_of_service_description": {
+          "field_type": "select_field",
+          "options": [
+            "Overhead",
+            "Underground",
+          ]
+        },
+        "type_of_service_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "main_disconnect_location_description": {
+          "field_type": "select_field",
+          "options": [
+            "Service Panel",
+            "Meter box",
+            "Split Bus Configuration",
+          ],
+        },
+        "main_disconnect_location_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not Present",
+            "Not Inspected",
+          ]
+        },
+        "service_panel_location_description": {
+          "field_type": "select_field",
+          "options": [
+            "Exterior",
+            "Basement",
+            "Garage",
+            "Interior",
+          ]
+        },
+        "service_panel_location_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not Present",
+            "Not Inspected",
+          ],
+        },
+      }],
+      "hvac": [{
+        "system_type_description": {
+          "field_type": "select_field",
+          "options": [
+            "Central split system",
+            "Package unit",
+            "Wall unit",
+          ]
+        },
+        "system_type_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not present",
+            "Not inspected",
+          ]
+        },
+      }],
+      "heating": [{
+        "location_description": {
+          "field_type": "select_field",
+          "options": [
+            "Basement",
+            "Hallway",
+            "Bedroom",
+            "Kitchen",
+            "Attic",
+          ]
+        },
+        "location_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "type_of_equipment_description": {
+          "field_type": "select_field",
+          "options": [
+            "Forced Air",
+            "Heat Pump",
+            "Gravity",
+            "Boiler",
+          ]
+        },
+        "type_of_equipment_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "manufacturer_description": {
+          "field_type": "select_field",
+          "options": [
+            "Carrier",
+            "Emerson",
+            "General Electric",
+            "Lennox",
+            "Maytag",
+            "Trane",
+            "Westinghouse",
+            "Whirlpool",
+            "York",
+            "Not Present",
+          ]
+        },
+      }],
+      "cooling": [{
+        "energy_source": {
+          "field_type": "select_field",
+          "options": [
+            "Electric",
+            "Not Present",
+            "Not Inspected",
+          ]
+        },
+        "type_of_equipment_description": {
+          "field_type": "select_field",
+          "options": [
+            "Split system",
+            "Evaporative",
+          ]
+        },
+        "type_of_equipment_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "condenser_make": {
+          "field_type": "select_field",
+          "options": [
+            "Carrier",
+            "Emerson",
+            "General Electric",
+            "Lennox",
+            "Maytag",
+            "Trane",
+            "Westinghouse",
+            "Whirlpool",
+            "York",
+            "Not Present",
+          ]
+        },
+        "condenser_size": {
+          "field_type": "select_field",
+          "options": [
+            "12,000 BTU (1 ton)",
+            "18,000 BTU (1.5 tons)",
+            "24,000 BTU (2 tons)",
+            "30,000 BTU (2.5 tons)",
+            "36,000 BTU (3 tons)",
+            "42,000 BTU (3.5 tons)",
+            "48,000 BTU (4 tons)",
+            "52,000 BTU (4.5 tons)",
+            "60,000 BTU (5 tons)",
+            "Not Present",
+            "Not inspected",
+          ]
+        },
+        "expansion_coil_make": {
+          "field_type": "select_field",
+          "options": [
+            "Carrier",
+            "Emerson",
+            "General Electric",
+            "Lennox",
+            "Maytag",
+            "Trane",
+            "Westinghouse",
+            "Whirlpool",
+            "York",
+            "Not Present",
+          ]
+        },
+      }],
+      "plumbing": [{
+        "water_service": {
+          "field_type": "select_field",
+          "options": [
+            "Public",
+            "Well System",
+            "Unknown",
+            "Not Present",
+            "Not Inspected",
+          ]
+        },
+        "supply_pump_material_description": {
+          "field_type": "select_field",
+          "options": [
+            "Copper",
+            "Galvanized",
+            "PEX",
+            "PVC",
+            "CPVC",
+            "Polybutelyne",
+            "Bronzite",
+          ]
+        },
+        "supply_pump_material_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further Evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "location_of_water_shutoff": {
+          "field_type": "select_field",
+          "options": [
+            "At meter",
+            "Basement",
+            "Crawlspace",
+            "Interior",
+            "By Water heater",
+            "Not located",
             "Not present",
             "Not inspected",
           ]
@@ -624,6 +1229,11 @@ export default class CreateScreen extends React.Component {
               >
                 {(entry[1]["options"]).map(option => <Picker.Item key={option} label={option} value={option} />)}
               </Picker>
+                : (entry[1]["field_type"] == "switch_field") ?
+                <Switch
+                  onValueChange={(val) => this.setState({[entry[0]]: val})}
+                  value={this.state[entry[0]]}
+                />
                 :
                 <TextInput
                   style={{height: 40, borderColor: 'gray', borderWidth: 1, width: 350}}

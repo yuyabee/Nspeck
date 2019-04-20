@@ -28,6 +28,12 @@ export default class CreateScreen extends React.Component {
             {key: 'Exterior'},
             {key: 'Garage'},
             {key: 'Roofing'},
+            {key: 'Structure'},
+            {key: 'Electrical'},
+            {key: 'Hvac'},
+            {key: 'Heating'},
+            {key: 'Cooling'},
+            {key: 'Plumbing'},
           ]}
           renderItem={({item}) => (
             <TouchableOpacity
