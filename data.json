@@ -919,7 +919,51 @@
                   ],
               }
             ],
-          "branch_circuit_wiring" :  
+          "branch_circuit_wiring" :
+            [
+              {
+                "description" :
+                  [
+                    "Non-Metallic shielded copper",
+                    "Metallic shielded copper",
+                    "Solid Aluminum",
+                    "Stranded copper",
+                    "Stranded Aluminum",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "overcurrent_protection" :
+            [
+              {
+                "description" :
+                  [
+                    "Breakers",
+                    "Fuses",
+                  ],
+                "conditions" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "gfci_afci_breakers" :
+            [
+              
+            ]
       }
     ]
 
