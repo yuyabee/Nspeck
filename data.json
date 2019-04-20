@@ -514,7 +514,7 @@
               "9 - 10 years",
               "11+ years",
             ],
-        "ventilation_present" :true,
+        "ventilation_present" : "bool",
         "ventilation" :
           [
             {
@@ -557,11 +557,149 @@
                 ],
             }
           ],
-          
+        "chimney" :
+          [
+            {
+              "description" :
+                [
+                  "Masonry",
+                  "Brick",
+                  "Stone",
+                  "Metal",
+                  "Wood Frame",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "sky_lights" :
+          [
+            {
+              "description" : "bool",
+              "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+            }
+          ],
+        "flashings" :
+          [
+            {
+              "description" :
+                [
+                  "Metal",
+                  "Tar/Caulk",
+                  "Asphalt",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "soffit_fascia" :
+          [
+            {
+              "description" :
+              [
+                "Wood",
+                "Aluminum",
+                "Vinyl",
+              ],
+              "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+            }
+          ],
+        "gutters_downspouts" :
+          [
+            {
+              "description" :
+                [
+                  "Metal",
+                  "Plastic",
+                  "Hidden Box",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
       }
-
+    ],
+  "structure" :
+    [
+      {
+        "foundation_types" :
+          [
+            {
+              "description" :
+                [
+                  "Basement",
+                  "Slab on Grade",
+                  "Floating Slab",
+                  "Crawl Space",
+                ],
+              "condition" :
+                [
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "foundation_material" :
+          [
+            {
+              "description" :
+                [
+                  "Poured Concrete",
+                  "Concrete Block",
+                  "Wood",
+                  "Stone",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "signs_of_water_penetration" : "bool",
+      }
     ]
-
 
 
 
