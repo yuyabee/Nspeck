@@ -999,108 +999,108 @@
       }
     ],
   "hvac" :
-  [
-    {
-      "system_type" :
-        [
-          {
-            "description" :
-            [
-            "Central split system",
-            "Package unit",
-            "Wall unit",
-            ],
-            "condition" :
-            [
-              "Not present",
-              "Not inspected",
-            ],
-          }
-        ],
-      "heating" :
-        [
-          {
-            "location" :
-            [
-              {
-                "description" :
-                [
-                "Basement",
-                "Hallway",
-                "Bedroom",
-                "Kitchen",
-                "Attic",
-                ],
+    [
+      {
+        "system_type" :
+          [
+            {
+              "description" :
+              [
+              "Central split system",
+              "Package unit",
+              "Wall unit",
+              ],
               "condition" :
+              [
+                "Not present",
+                "Not inspected",
+              ],
+            }
+          ],
+        "heating" :
+          [
+            {
+              "location" :
+              [
+                {
+                  "description" :
+                  [
+                  "Basement",
+                  "Hallway",
+                  "Bedroom",
+                  "Kitchen",
+                  "Attic",
+                  ],
+                "condition" :
+                  [
+                    "Not present",
+                    "Not inspected",
+                  ],
+                }
+              ],
+              "type_of_equipment" :
                 [
-                  "Not present",
-                  "Not inspected",
+                  {
+                    "description" :
+                      [
+                        "Forced Air",
+                        "Heat Pump",
+                        "Gravity",
+                        "Boiler",
+                      ],
+                    "condition" :
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
                 ],
-              }
-            ],
-            "type_of_equipment" :
-              [
-                {
-                  "description" :
-                    [
-                      "Forced Air",
-                      "Heat Pump",
-                      "Gravity",
-                      "Boiler",
-                    ],
-                  "condition" :
-                    [
-                      "Satisfactory",
-                      "Marginal",
-                      "Repair or Replace",
-                      "Further Evaluation required",
-                      "Not present",
-                      "Not inspected",
-                    ],
-                }
-              ],
-            "manufacturer" :
-              [
-                {
-                  "description" :
-                    [
-                      "Carrier",
-                      "Emerson",
-                      "General Electric",
-                      "Lennox",
-                      "Maytag",
-                      "Trane",
-                      "Westinghouse",
-                      "Whirlpool",
-                      "York",
-                      "Not Present",
-                    ],
-                  "condition" :
-                    [
-                      "Not inspected",
-                    ]
-                }
-              ],
-            "heating_fuel" :
-              [
-                {
-                  "description" :
-                    [
-                      "Electric",
-                      "Gas",
-                      "LP Gas",
-                    ],
-                  "condition" :
-                    [
-                      "Satisfactory",
-                      "Marginal",
-                      "Repair or Replace",
-                      "Further Evaluation required",
-                      "Not present",
-                      "Not inspected",
-                    ],
-                }
-              ],
+              "manufacturer" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Carrier",
+                        "Emerson",
+                        "General Electric",
+                        "Lennox",
+                        "Maytag",
+                        "Trane",
+                        "Westinghouse",
+                        "Whirlpool",
+                        "York",
+                        "Not Present",
+                      ],
+                    "condition" :
+                      [
+                        "Not inspected",
+                      ]
+                  }
+                ],
+              "heating_fuel" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Electric",
+                        "Gas",
+                        "LP Gas",
+                      ],
+                    "condition" :
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
             "intput_BTUs" : "int",
             "output_BTUs" : "int",
             "approximate_age_of_heating" : "int",
@@ -1404,9 +1404,79 @@
                 ],
             }
           ],
-          
+        "water_heater" :
+            [
+              {
+                "manufacturer" :
+                  [
+                    {
+                      "description" :
+                        [
+                          "American Standard",
+                          "Rheem",
+                          "General Electric",
+                          "Whirlpool",
+                          "Kenmore",
+                          "Bosch",
+                          "Noritz",
+                          "Rinnai",
+                          "Takagi",
+                          "Ruud",
+                          "Not present",
+                          "Not inspected",
+                        ],
+                    }
+                  ],
+                "fuel" :
+                    [
+                      "Natural gas",
+                      "LP Gas",
+                      "Electric",
+                      "Not inspected",
+                    ],
+                "capacity" : "int",
+                "temp_pressure_relief_valve" :
+                  [
+                    {
+                      "description" :
+                        [
+                          "Present with Blow off leg",
+                          "Not present",
+                          "Not tested",
+                        ],
+                      "condition" :
+                        [
+                          "Satisfactory",
+                          "Marginal",
+                          "Repair or Replace",
+                          "Further Evaluation required",
+                          "Not present",
+                          "Not inspected",
+                        ],
+                    }
+                  ],
+                "fuel_disconnect" :
+                  [
+                    {
+                      "description" :
+                        [
+                          "In same room",
+                          "Within sight of equipment",
+                          "Not present",
+                          "Not inspected",
+                        ],
+                    }
+                  ],
+              }
+            ],
       }
-    ]
+    ],
+  "bathrooms" :
+  [
+    {
+      
+    }
+  ]
 
 
 
