@@ -89,6 +89,14 @@ export default class CreateScreen extends React.Component {
     selection: null,
   };
 
+  static navigationOptions = (props) => {
+    console.log(props);
+
+    return {
+      title: props.navigation.state.params.name,
+    }
+  };
+
   componentDidMount() {
     this.setState({...this.state, ...properties[this.props.name]})
   }
