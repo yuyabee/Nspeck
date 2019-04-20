@@ -713,10 +713,97 @@
                 ],
             }
           ],
-
+        "prior_waterproofing" :
+          [
+            {
+              "description" :
+                [
+                  "Perimeter Drain",
+                  "Expoxy Injection",
+                  "Plastic Panels",
+                  "Surface Patches",
+                  "Gutter Type Drain",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "floor_structure" :
+          [
+            {
+              "description" :
+                [
+                  "Concrete Slab",
+                  "Wood Frame",
+                  "Engineered I-Joist",
+                  "Truss",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "subflooring" :
+          [
+            {
+              "description" :
+                [
+                  "Plywood",
+                  "Oriented Strand Board",
+                  "Solid Wood Plank",
+                  "Tongue and Groove Wood",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "wall_structure" :
+          [
+            {
+              "description" :
+                [
+                  "Full Masonry",
+                  "Wood Frame",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+      }
+    ],
+    "electrical" :
+    [
+      {
+        
       }
     ]
-
 
 
 
