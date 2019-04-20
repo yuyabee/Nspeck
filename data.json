@@ -1,0 +1,503 @@
+// This .json file will lay out all of components an inspector can view while
+// using the app.
+// This is the list view
+
+{
+"general" :
+  [
+    {
+      "property_type" :
+        [
+        "Single family",
+        "Condo",
+        "Townhouse/Villa",
+        "Multi Family",
+        "Other",
+        ],
+      "stories" :
+        [
+          "One",
+          "Two",
+          "Split Level",
+          "One and a half",
+          "Other",
+        ],
+      "approximate_age" :
+        [
+          "Custom",
+        ],
+      "bedrooms_baths" :
+        [
+          "Custom",
+        ],
+      "door_faces" :
+        [
+          "North",
+          "Northeast",
+          "East",
+          "Southeast",
+          "South",
+          "Southwest",
+          "West",
+          "Northwest",
+        ],
+      "furnished" :
+        [
+          "Yes",
+          "No",
+          "Partially",
+        ],
+      "weather" :
+        [
+          "Sunny",
+          "Overcast",
+          "Drizzle",
+          "Raining",
+        ],
+      "temperature" :
+        [
+          "Hot",
+          "Warm",
+          "Cool",
+          "Cold",
+          "Not present",
+          "Not inspected",
+        ],
+      "soil_condition" :
+        [
+          "Dry",
+          "Damp",
+          "Wet",
+          "Snow",
+          "Frozen",
+          "Not present",
+          "Not inspected",
+        ],
+      "utilities_on_during_inspection" :
+        [
+          "Electric service",
+          "Gas service",
+          "Water service",
+          "Not present",
+          "Not inspected",
+        ],
+    }
+  ],
+  "site" :
+    [
+      {
+      "site_grading" :
+        [
+          {
+            "description" :
+            [
+              "Mostly level",
+              "Sloped away from structure",
+              "Sloped away toward structure",
+            ],
+            "condition" :
+            [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+            ],
+          }
+        ],
+      "vegetation" :
+          [
+            {
+              "description" :
+                [
+                  "Growing against structure",
+                  "Not growing against structure",
+                  "Generally overgrown",
+                  "Generally maintained",
+                  "Not inspected",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+              }
+          ],
+      "retaining_walls" :
+        [
+          {
+            "description" :
+              [
+                "Concrete",
+                "Masonry",
+                "Wood",
+                "Not inspected",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+      "driveway" :
+        [
+          {
+            "description" :
+              [
+                "Concrete",
+                "Stamped Concrete",
+                "Stone",
+                "Brick",
+                "Pavers",
+                "Gravel",
+                "Asphalt",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+      "walkways" :
+        [
+          {
+            "description" :
+              [
+                "Concrete",
+                "Stamped Concrete",
+                "Brick",
+                "Pavers",
+                "Gravel",
+                "Asphalt",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+      "steps_stoops" :
+        [
+          {
+            "description" :
+              [
+                "Concrete",
+                "Stamped Concrete",
+                "Brick",
+                "Pavers",
+                "Gravel",
+                "Asphalt",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+      "patios_decks" :
+        [
+          {
+            "description" :
+              [
+                "Concrete",
+                "Stamped Concrete",
+                "Brick",
+                "Pavers",
+                "Stone",
+                "Wood",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+      }
+    ],
+  "exterior" :
+    [
+      {
+        "exterior_covering" :
+          [
+            "Brick",
+            "Vinyl Siding",
+            "Aluminum Siding",
+            "Exterior insulated finish system",
+            "Stucco",
+            "Stone",
+            "Lap Wood",
+            "Cement Shingles",
+            "Wood Tongue and Groove",
+          ],
+        "exterior_trim_material" :
+          [
+            {
+              "description" :
+              [
+              "Wood",
+              "Vinyl",
+              "Aluminum",
+              ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "windows" :
+          [
+            {
+              "description" :
+              [
+                "Wood",
+                "Metal clad",
+                "Vinyl",
+                "Aluminum",
+              ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "entry_doors" :
+          [
+            {
+              "description" :
+                [
+                  "Wood",
+                  "Vinyl",
+                  "Fiberglass",
+                  "Steel",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "balconies" :
+            [
+              {
+                "description" :
+                  [
+                    "Wood",
+                    "Concrete",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+        "railings" :
+            [
+              {
+                "description" :
+                  [
+                    "Wood",
+                    "Vinyl",
+                    "Metal",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+      }
+    ],
+  "garage" :
+      [
+        {
+          "garage_type" :
+            [
+              {
+                "description" :
+                  [
+                    "Attached",
+                    "Detached",
+                    "Basement",
+                    "Carport",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "garage_size" :
+              [
+                {
+                  "description" :
+                    [
+                      "1 car",
+                      "1.5 cars",
+                      "2 cars",
+                      "2.5 cars",
+                      "3 cars",
+                    ],
+                  "condition" :
+                    [
+                        "Not present",
+                        "Not inspected",
+                    ],
+                }
+              ],
+          "door_opener" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Manual opening",
+                        "Chain drive",
+                        "Belt drive",
+                        "Screw drive",
+                      ],
+                    "condition" :
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+          "opener_safety_feature" :
+            [
+              {
+                "description" :
+                  [
+                    "Light Beam",
+                    "Force Sensitive",
+                  ],
+                "condition" :
+                  [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further evaluation required",
+                      "Not present",
+                      "Not inspected",
+                  ],
+              }
+            ],
+        }
+      ],
+  "roofing" :
+    [
+      {
+        "inspect_method" :
+          [
+            {
+              "description" :
+                [
+                  "From ground with binoculars",
+                  "Walked Roof/Arms length",
+                ],
+              "condition" :
+                [
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "roof_design" :
+            [
+              {
+                "description" :
+                  [
+                    "Gable",
+                    "Hip",
+                    "Duch Hip",
+                    "Mansard",
+                    "Hexagonal Gazebo",
+                    "Flat",
+                  ],
+                "condition" :
+                  [
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+        "roof_covering" :
+            [
+              {
+                "description" :
+              }
+            ]
+      }
+
+    ]
+
+
+
+
+
+
+
+
+}
