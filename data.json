@@ -798,10 +798,57 @@
           ],
       }
     ],
-    "electrical" :
+  "electrical" :
     [
       {
-        
+          "type_of_service" :
+            [
+              {
+                "description" :
+                  [
+                    "Overhead",
+                    "Underground",
+                  ],
+                "condition" :
+                  [
+                    "Not Present",
+                    "Not inspected"
+                  ],
+              }
+            ],
+          "main_disconnect_location" :
+            [
+              {
+                "description" :
+                  [
+                    "Service Panel",
+                    "Meter box",
+                    "Split Bus Configuration",
+                  ],
+                "conditions" :
+                  [
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "service_panel_location" :
+            [
+              {
+                "description" :
+                  [
+                    "Exterior",
+                    "Basement",
+                    "Garage",
+                    "Interior",
+                  ],
+                "condition" :
+                  [
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ]
       }
     ]
 
