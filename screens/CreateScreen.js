@@ -1,8 +1,6 @@
 import React from 'react';
 import { Alert, TouchableOpacity, FlatList, StyleSheet, Text, View } from 'react-native';
 
-
-
 export default class CreateScreen extends React.Component {
   state = {
     general: {},
@@ -15,7 +13,18 @@ export default class CreateScreen extends React.Component {
   };
 
   static navigationOptions = {
-    title: 'Create New Inspection',
+  };
+  static navigationOptions = (props) => {
+    console.log(props)
+    if (props.navigation.state.params && props.navigation.state.params.check) {
+      return {
+        title: 'Check Inspection',
+      }
+    } else {
+      return {
+        title: 'Create New Inspection',
+      }
+    }
   };
 
   render() {
@@ -41,7 +50,7 @@ export default class CreateScreen extends React.Component {
                 this.props.navigation.navigate('Inspection', {
                   name: item["key"].toLowerCase(),
                   state: this.state,
-                  update: this.update
+                  update: this.update,
                 })
               }}
             >

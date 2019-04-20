@@ -8,6 +8,7 @@ import {
   TextInput,
   TouchableOpacity,
   FlatList,
+  Button,
   View,
 } from 'react-native';
 import { WebBrowser } from 'expo';
@@ -129,25 +130,19 @@ export default class HomeScreen extends React.Component {
       }
     }
 
+    let props = this.props.navigation.state.params;
+
     return (
       <View style={styles.container}>
-        <FlatList
-          data={[{key: 1},{key: 2},{key: 3},{key: 4},{key: 5}]}
-          keyExtractor={(item) => item.key.toString() }
-          renderItem={({item}) => {
-            return (
-              <TouchableOpacity
-                onPress={() => {
-                  this.props.navigation.navigate('House', {name: item.key})
-                }}
-              >
-                <Image
-                  source={getImage(item.key)}
-                  style={{width: 400, height:300}}
-                />
-              </TouchableOpacity>
-            )
-          }}
+        <Image
+          source={getImage(props.name)}
+          style={{width: 400, height:300}}
+        />
+        <Button
+          onPress={() => this.props.navigation.navigate('Inspection', {check: true})}
+          title="Check Inspection"
+          color="blue"
+          accessibilityLabel="Learn more about this purple button"
         />
       </View>
     );

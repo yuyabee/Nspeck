@@ -157,8 +157,6 @@ export default class CreateScreen extends React.Component {
   };
 
   static navigationOptions = (props) => {
-    console.log(props);
-
     return {
       title: props.navigation.state.params.name,
     }
@@ -184,7 +182,7 @@ export default class CreateScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+        <ScrollView contentContainerStyle={styles.contentContainer}>
           <Button
             onPress={() => this.showCamera(ImagePicker.MediaTypeOptions.Images)}
             title="Add Photo"
@@ -1217,11 +1215,11 @@ export default class CreateScreen extends React.Component {
       <View style={styles.container}>
         {Object.entries(forms[props.name][0]).map(entry => (
           <View key={entry[0]}>
-            <Text>{entry[0]}</Text>
+            <Text style={{fontSize: 24, color: "purple", textAlign: 'center'}}>{entry[0]}</Text>
             {(entry[1]["field_type"] == "select_field") ? 
               <Picker
                 selectedValue={this.state[entry[0]]}
-                style={{height: 50, width: 400}}
+                style={{height: 120, width: 360, marginLeft: 40, marginBottom: 70}}
                 onValueChange={(itemValue, itemIndex) =>
                   // props.update([props.name, entry[0]].join("_"), itemValue)
                   this.setState({[entry[0]]: itemValue})
@@ -1283,6 +1281,8 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 22,
     marginBottom: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   item: {

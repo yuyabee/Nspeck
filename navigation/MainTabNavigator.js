@@ -8,6 +8,7 @@ import LinksScreen from '../screens/LinksScreen';
 import CreateScreen from '../screens/CreateScreen';
 import InspectionScreen from '../screens/InspectionScreen';
 import ListHomeScreen from '../screens/ListHomeScreen';
+import HouseScreen from '../screens/HouseScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -29,6 +30,8 @@ HomeStack.navigationOptions = {
 
 const ListHomeStack = createStackNavigator({
   ListHome: ListHomeScreen,
+  House: HouseScreen,
+  Inspection: CreateScreen,
 });
 
 ListHomeStack.navigationOptions = {
@@ -38,23 +41,9 @@ ListHomeStack.navigationOptions = {
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? 'list'
+          ? 'ios-list'
           : 'md-list'
       }
-    />
-  ),
-};
-
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
-});
-
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
     />
   ),
 };
