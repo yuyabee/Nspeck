@@ -3,79 +3,79 @@
 // This is the list view
 
 {
-"general" :
-  [
-    {
-      "property_type" :
-        [
-        "Single family",
-        "Condo",
-        "Townhouse/Villa",
-        "Multi Family",
-        "Other",
-        ],
-      "stories" :
-        [
-          "One",
-          "Two",
-          "Split Level",
-          "One and a half",
+  "general" :
+    [
+      {
+        "property_type" :
+          [
+          "Single family",
+          "Condo",
+          "Townhouse/Villa",
+          "Multi Family",
           "Other",
-        ],
-      "approximate_age" :
-        [
-          "Custom",
-        ],
-      "bedrooms_baths" :
-        [
-          "Custom",
-        ],
-      "door_faces" :
-        [
-          "North",
-          "Northeast",
-          "East",
-          "Southeast",
-          "South",
-          "Southwest",
-          "West",
-          "Northwest",
-        ],
-      "furnished" :
-        [
-          "Yes",
-          "No",
-          "Partially",
-        ],
-      "temperature" :
-        [
-          "Hot",
-          "Warm",
-          "Cool",
-          "Cold",
-          "Not present",
-          "Not inspected",
-        ],
-      "soil_condition" :
-        [
-          "Dry",
-          "Damp",
-          "Wet",
-          "Snow",
-          "Frozen",
-          "Not present",
-          "Not inspected",
-        ],
-      "utilities_on_during_inspection" :
-        [
-          "Electric service",
-          "Gas service",
-          "Water service",
-          "Not present",
-          "Not inspected",
-        ],
-    }
-  ],
+          ],
+        "stories" :
+          [
+            "One",
+            "Two",
+            "Split Level",
+            "One and a half",
+            "Other",
+          ],
+        "approximate_age" :
+          [
+            "Custom",
+          ],
+        "bedrooms_baths" :
+          [
+            "Custom",
+          ],
+        "door_faces" :
+          [
+            "North",
+            "Northeast",
+            "East",
+            "Southeast",
+            "South",
+            "Southwest",
+            "West",
+            "Northwest",
+          ],
+        "furnished" :
+          [
+            "Yes",
+            "No",
+            "Partially",
+          ],
+        "temperature" :
+          [
+            "Hot",
+            "Warm",
+            "Cool",
+            "Cold",
+            "Not present",
+            "Not inspected",
+          ],
+        "soil_condition" :
+          [
+            "Dry",
+            "Damp",
+            "Wet",
+            "Snow",
+            "Frozen",
+            "Not present",
+            "Not inspected",
+          ],
+        "utilities_on_during_inspection" :
+          [
+            "Electric service",
+            "Gas service",
+            "Water service",
+            "Not present",
+            "Not inspected",
+          ],
+      }
+    ],
   "site" :
     [
       {
