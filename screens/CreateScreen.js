@@ -27,7 +27,6 @@ export default class CreateScreen extends React.Component {
             {key: 'Site'},
             {key: 'Exterior'},
             {key: 'Garage'},
-            {key: 'Kitchen'},
             {key: 'Roofing'},
             {key: 'Interior'},
           ]}

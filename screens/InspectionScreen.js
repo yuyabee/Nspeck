@@ -76,7 +76,12 @@ const properties = {
     opener_safety_feature_condition: "",
     opener_safety_feature_description: "",
   },
-
+  roofing: {
+    inspect_method_description: "",
+    inspect_method_condition: "",
+    roof_design_description: "",
+    roof_design_condition: "",
+  }
 }
 
 export default class CreateScreen extends React.Component {
@@ -555,6 +560,40 @@ export default class CreateScreen extends React.Component {
           ],
         },
       }],
+      "roofing": [{
+        "inspect_method_description": {
+          "field_type": "select_field",
+          "options": [
+            "From ground with binoculars",
+            "Walked Roof/Arms length",
+          ]
+        },
+        "inspect_method_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "roof_design_description": {
+          "field_type": "select_field",
+          "options": [
+            "Gable",
+            "Hip",
+            "Duch Hip",
+            "Mansard",
+            "Hexagonal Gazebo",
+            "Flat",
+          ],
+        },
+        "roof_design_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not present",
+            "Not inspected",
+          ]
+        },
+      }]
     };
 
     let props = this.props.navigation.state.params;
