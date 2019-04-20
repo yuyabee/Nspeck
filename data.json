@@ -848,6 +848,29 @@
                     "Not Inspected",
                   ],
               }
+            ],
+          "service_line_material" :
+            [
+              {
+                "description" :
+                  [
+                    "Copper",
+                    "Aluminum",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "service_voltage" :
+            [
+              
             ]
       }
     ]
