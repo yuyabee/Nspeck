@@ -870,8 +870,56 @@
             ],
           "service_voltage" :
             [
-              
-            ]
+              {
+                "description" :
+                  [
+                    "120 volts",
+                    "240 volts",
+                  ],
+                "conditions" :
+                  [
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "service_amperage" :
+            [
+              {
+                "description" :
+                  [
+                    "60 amps",
+                    "100 amps",
+                    "125 amps",
+                    "150 amps",
+                    "200 amps",
+                    "225 amps",
+                  ],
+                "condition" :
+                  [
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "service_panel_ground" :
+            [
+              {
+                "description" :
+                  [
+                    "Cold water pipe",
+                    "Ground rod",
+                    "Well pump system",
+                    "Unknown not visible",
+                  ],
+                "condition" :
+                  [
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "branch_circuit_wiring" :  
       }
     ]
 
