@@ -962,8 +962,40 @@
             ],
           "gfci_afci_breakers" :
             [
-              
-            ]
+              {
+                "description" : "bool",
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "smoke_detectors" :
+            [
+              {
+                "description" :
+                  [
+                    "9 volt battery type",
+                    "Lithium battery type",
+                    "Hard wired",
+                    "Hard wired, interconnected",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
       }
     ]
 
