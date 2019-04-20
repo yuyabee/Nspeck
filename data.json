@@ -1975,7 +1975,103 @@
                   "Not inspected",
                 ],
             }
-          ]
+          ],
+        "gfci_protection" :
+          [
+            {
+              "description" :
+                [
+                  "To Exterior",
+                  "To Crawl",
+                  "To Attic",
+                  "No Venting",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "laundry_hookups" :
+          [
+            {
+              "description" : "bool",
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "washer" :
+          [
+            {
+              "description" :
+                [
+                  "Bosch",
+                  "Frigidaire",
+                  "General Electric",
+                  "Hotpoint",
+                  "Kenmore",
+                  "Kitchen Aid",
+                  "LG",
+                  "Maytag",
+                  "Samsung",
+                  "Sharp",
+                  "Sub-Zero",
+                  "Viking",
+                  "Whirlpool",
+                ],
+              "condition":
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "dryer" :
+          [
+            {
+              "description" :
+                [
+                  "Bosch",
+                  "Frigidaire",
+                  "General Electric",
+                  "Hotpoint",
+                  "Kenmore",
+                  "Kitchen Aid",
+                  "LG",
+                  "Maytag",
+                  "Samsung",
+                  "Sharp",
+                  "Sub-Zero",
+                  "Viking",
+                  "Whirlpool",
+                ],
+              "condition":
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
       }
     ],
   "interior" :
