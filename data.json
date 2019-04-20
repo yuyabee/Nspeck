@@ -1472,14 +1472,469 @@
       }
     ],
   "bathrooms" :
-  [
-    {
-      
-    }
-  ]
+    [
+      {
+        "location" : "string",
+        "bathtub" :
+          [
+            {
+              "description" :
+                [
+                  "Recessed",
+                  "Free standing",
+                  "Recirculating",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "shower" :
+          [
+            {
+              "description" :
+                [
+                  "Stall",
+                  "In tub",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "sinks" :
+          [
+            {
+              "description" :
+                [
+                  "Single Vanity",
+                  "Double Vanity",
+                  "Pedestal",
+                  "Vessel Bowl",
+                  "Wall Mounted",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "toilet" :
+          [
+            {
+              "description" :
+                [
+                  "Standard tank",
+                  "Low Rise tank",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "shower_walls" :
+          [
+            {
+              "description" :
+                [
+                  "Tile",
+                  "Marble",
+                  "Fiberglass",
+                  "Stone",
+                  "Acrylic",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "floor" :
+          [
+            {
+              "description" :
+              [
+                "Tile",
+                "Marble",
+                "Fiberglass",
+                "Stone",
+                "Acrylic",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+            }
+          ],
+        "ventilation_type" :
+          [
+            {
+              "description" :
+                [
+                  "Ventilator",
+                  "Window",
+                  "Wall Vent",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "gfci_protection" :
+          [
+            {
+              "description" :
+                [
+                  "Outlets",
+                  "Lights",
+                  "Recirculating tub",
+                ],
+              "condition" :
+                [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                ],
+            }
+          ],
+      }
+    ],
+  "kitchen" :
+    [
+      {
+        "cabinets" :
+        [
+          {
+            "description" :
+              [
+                "Wood",
+                "Laminated",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+        "countertops" :
+        [
+          {
+            "description" :
+              [
+                "Granite",
+                "Tile",
+                "Stone",
+                "Laminated",
+                "Wood",
+                "Stainless Steel",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+        "sink" :
+        [
+          {
+            "description" :
+              [
+                "single",
+                "double",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+        "appliances" :
+          [
+            {
+              "oven" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "cooktop" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "range_hood" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "refrigerator" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "dishwasher" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "microwave" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "disposal" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+            }
+          ]
+        }
+      ],  
+  "laundry" :
+    [
+      {
+
+      }
+    ],
+  "interior" :
+    [
+      {
+
+      }
+    ]
 
 
 
-
-
-}
+  }
