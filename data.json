@@ -47,13 +47,6 @@
           "No",
           "Partially",
         ],
-      "weather" :
-        [
-          "Sunny",
-          "Overcast",
-          "Drizzle",
-          "Raining",
-        ],
       "temperature" :
         [
           "Hot",
@@ -698,6 +691,29 @@
             }
           ],
         "signs_of_water_penetration" : "bool",
+        "description_of_water_penetration" :
+          [
+            {
+              "description" :
+                [
+                  "Moisture",
+                  "Dampness",
+                  "Stains",
+                  "Efflorescence",
+                  "Mildew",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+
       }
     ]
 
