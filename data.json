@@ -508,8 +508,56 @@
             ],
         "approximate_roof_age" :
             [
-              "Five "
-            ]
+              "0 - 2 years",
+              "3 - 5 years",
+              "6 - 8 years",
+              "9 - 10 years",
+              "11+ years",
+            ],
+        "ventilation_present" :true,
+        "ventilation" :
+          [
+            {
+              "description" :
+                [
+                  "Roof",
+                  "Soffit",
+                  "Power Ventilator",
+                  "Gable Ends",
+                  "Ridge Vents",
+                  "Turbine",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "vent_stacks" :
+          [
+            {
+              "description" :
+                [
+                  "Metal",
+                  "Plastic",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+          
       }
 
     ]
