@@ -997,8 +997,344 @@
               }
             ],
       }
+    ],
+  "hvac" :
+  [
+    {
+      "system_type" :
+        [
+          {
+            "description" :
+            [
+            "Central split system",
+            "Package unit",
+            "Wall unit",
+            ],
+            "condition" :
+            [
+              "Not present",
+              "Not inspected",
+            ],
+          }
+        ],
+      "heating" :
+        [
+          {
+            "location" :
+            [
+              {
+                "description" :
+                [
+                "Basement",
+                "Hallway",
+                "Bedroom",
+                "Kitchen",
+                "Attic",
+                ],
+              "condition" :
+                [
+                  "Not present",
+                  "Not inspected",
+                ],
+              }
+            ],
+            "type_of_equipment" :
+              [
+                {
+                  "description" :
+                    [
+                      "Forced Air",
+                      "Heat Pump",
+                      "Gravity",
+                      "Boiler",
+                    ],
+                  "condition" :
+                    [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further Evaluation required",
+                      "Not present",
+                      "Not inspected",
+                    ],
+                }
+              ],
+            "manufacturer" :
+              [
+                {
+                  "description" :
+                    [
+                      "Carrier",
+                      "Emerson",
+                      "General Electric",
+                      "Lennox",
+                      "Maytag",
+                      "Trane",
+                      "Westinghouse",
+                      "Whirlpool",
+                      "York",
+                      "Not Present",
+                    ],
+                  "condition" :
+                    [
+                      "Not inspected",
+                    ]
+                }
+              ],
+            "heating_fuel" :
+              [
+                {
+                  "description" :
+                    [
+                      "Electric",
+                      "Gas",
+                      "LP Gas",
+                    ],
+                  "condition" :
+                    [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further Evaluation required",
+                      "Not present",
+                      "Not inspected",
+                    ],
+                }
+              ],
+            "intput_BTUs" : "int",
+            "output_BTUs" : "int",
+            "approximate_age_of_heating" : "int",
+            "filter_type" :
+            [
+              {
+                "description" :
+                  [
+                    "Washable",
+                    "Disposable",
+                    "Electronic",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+            "output_temp" : "int",
+            "type_of_distribution" :
+              [
+                {
+                  "description" :
+                    [
+                      "Metal Ducting",
+                      "Flexible Ducting",
+                      "Pipes",
+                    ],
+                  "condition" :
+                    [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further Evaluation required",
+                      "Not present",
+                      "Not inspected",
+                    ],
+                }
+              ],
+          }
+        ],
+      "cooling" :
+      [
+        {
+          "energy_source" :
+            [
+              {
+                "description" :
+                  [
+                    "Electric",
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "type_of_equipment" :
+            [
+              {
+                "description" :
+                  [
+                    "Split system",
+                    "Evaporative",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "condenser_make" :
+              [
+                {
+                  "description" :
+                    [
+                      "Carrier",
+                      "Emerson",
+                      "General Electric",
+                      "Lennox",
+                      "Maytag",
+                      "Trane",
+                      "Westinghouse",
+                      "Whirlpool",
+                      "York",
+                      "Not Present",
+                    ],
+                }
+              ],
+            "condenser_size" :
+              [
+                {
+                  "description" :
+                    [
+                      "12,000 BTU (1 ton)",
+                      "18,000 BTU (1.5 tons)",
+                      "24,000 BTU (2 tons)",
+                      "30,000 BTU (2.5 tons)",
+                      "36,000 BTU (3 tons)",
+                      "42,000 BTU (3.5 tons)",
+                      "48,000 BTU (4 tons)",
+                      "52,000 BTU (4.5 tons)",
+                      "60,000 BTU (5 tons)",
+                      "Not Present",
+                      "Not inspected",
+                    ],
+                }
+              ],
+            "condenser_approx_age" : "int",
+            "expansion_coil_make" :
+              [
+                "Carrier",
+                "Emerson",
+                "General Electric",
+                "Lennox",
+                "Maytag",
+                "Trane",
+                "Westinghouse",
+                "Whirlpool",
+                "York",
+                "Not Present",
+              ],
+            "expansion_coil_size" :
+              [
+                  {
+                    "description" :
+                      [
+                        "12,000 BTU (1 ton)",
+                        "18,000 BTU (1.5 tons)",
+                        "24,000 BTU (2 tons)",
+                        "30,000 BTU (2.5 tons)",
+                        "36,000 BTU (3 tons)",
+                        "42,000 BTU (3.5 tons)",
+                        "48,000 BTU (4 tons)",
+                        "52,000 BTU (4.5 tons)",
+                        "60,000 BTU (5 tons)",
+                        "Not Present",
+                        "Not inspected",
+                      ],
+                  }
+              ],
+            "expansion_coil_approx_make" : "int",
+            "condesate_drainage" :
+              [
+                {
+                  "description" :
+                    [
+                      "To floor drain",
+                      "Condensate pump",
+                      "To exterior",
+                      "To waste drain",
+                    ],
+                  "condition" :
+                    [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further Evaluation required",
+                      "Not present",
+                      "Not inspected",
+                    ]
+                }
+              ],
+            "ac_supply_air_temp" : "int",
+            "ac_return_air_temp" : "int",
+            "ac_temp_drop" : "int",
+        }
+      ],
+    }
+  ],
+  "plumbing" :
+    [
+      {
+        "water_service" :
+          [
+            {
+              "description" :
+              [
+                "Public",
+                "Well System",
+                "Unknown",
+                "Not Present",
+                "Not Inspected",
+              ],
+            }
+          ],
+        "supply_pump_material" :
+          [
+            {
+              "description" :
+                [
+                  "Copper",
+                  "Galvanized",
+                  "PEX",
+                  "PVC",
+                  "CPVC",
+                  "Polybutelyne",
+                  "Bronzite",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "location_of_water_shutoff" :
+          [
+            {
+              "description" :
+                [
+                  "At meter",
+                  "Basement",
+                  "Crawlspace",
+                  "Interior",
+                  "By Water heater",
+                  "Not located",
+                ]
+            }
+          ]
+      }
     ]
-
 
 
 
