@@ -54,6 +54,29 @@ const properties = {
     patios_decks_description: "",
     patios_decks_condition: "",
   },
+  exterior: {
+    covering: "",
+    trim_material_description: "",
+    trim_material_condition: "",
+    windows_description: "",
+    windows_condition: "",
+    entry_doors_description: "",
+    entry_doors_condition: "",
+    balconies_description: "",
+    railings_description: "",
+    railings_condition: "",
+  },
+  garage: {
+    type_description: "",
+    type_condition: "",
+    size_description: "",
+    size_condition: "",
+    door_opener_condition: "",
+    door_opener_description: "",
+    opener_safety_feature_condition: "",
+    opener_safety_feature_description: "",
+  },
+
 }
 
 export default class CreateScreen extends React.Component {
@@ -349,13 +372,189 @@ export default class CreateScreen extends React.Component {
           "options": [
             "Satisfactory",
             "Marginal",
+            "Repair or Replace", "Further evaluation required", "Not present",
+            "Not inspected",
+          ],
+        }
+      }],
+      "exterior": [{
+        "covering": {
+          "field_type": "select_field",
+          "options": [
+            "Brick",
+            "Vinyl Siding",
+            "Aluminum Siding",
+            "Exterior insulated finish system",
+            "Stucco",
+            "Stone",
+            "Lap Wood",
+            "Cement Shingles",
+            "Wood Tongue and Groove",
+          ]
+        },
+        "trim_material_description": {
+          "field_type": "select_field",
+          "options": [
+            "Wood",
+            "Vinyl",
+            "Aluminum",
+          ],
+        },
+        "trim_material_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "windows_description": {
+          "field_type": "select_field",
+          "options": [
+            "Wood",
+            "Metal clad",
+            "Vinyl",
+            "Aluminum",
+          ],
+        },
+        "windows_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ]
+        },
+        "entry_doors_description": {
+          "field_type": "select_field",
+          "options": [
+            "Wood",
+            "Vinyl",
+            "Fiberglass",
+            "Steel",
+          ],
+        },
+        "entry_doors_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
             "Repair or Replace",
             "Further evaluation required",
             "Not present",
             "Not inspected",
           ],
-        }
-      }]
+        },
+        "balconies_description": {
+          "field_type": "select_field",
+          "options": [
+            "Wood",
+            "Concrete",
+          ],
+        },
+        "railings_description": {
+          "field_type": "select_field",
+          "options": [
+            "Wood",
+            "Vinyl",
+            "Metal",
+          ],
+        },
+        "railings_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+      }],
+      "garage": [{
+        "type_description": {
+          "field_type": "select_field",
+          "options": [
+            "Attached",
+            "Detached",
+            "Basement",
+            "Carport",
+          ]
+        },
+        "type_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "size_description": {
+          "field_type": "select_field",
+          "options": [
+            "1 car",
+            "1.5 cars",
+            "2 cars",
+            "2.5 cars",
+            "3 cars",
+          ]
+        },
+        "size_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "door_opener_description": {
+          "field_type": "select_field",
+          "options": [
+            "Manual opening",
+            "Chain drive",
+            "Belt drive",
+            "Screw drive",
+          ]
+        },
+        "door_opener_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+        "opener_safety_feature_description": {
+          "field_type": "select_field",
+          "options": [
+            "Light Beam",
+            "Force Sensitive",
+          ],
+        },
+        "opener_safety_feature_condition": {
+          "field_type": "select_field",
+          "options": [
+            "Satisfactory",
+            "Marginal",
+            "Repair or Replace",
+            "Further evaluation required",
+            "Not present",
+            "Not inspected",
+          ],
+        },
+      }],
     };
 
     let props = this.props.navigation.state.params;
