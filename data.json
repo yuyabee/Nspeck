@@ -1,88 +1,78 @@
-// This .json file will lay out all of components an inspector can view while
-// using the app.
-// This is the list view
 
 {
-"general" :
-  [
-    {
-      "property_type" :
-        [
-        "Single family",
-        "Condo",
-        "Townhouse/Villa",
-        "Multi Family",
-        "Other",
-        ],
-      "stories" :
-        [
-          "One",
-          "Two",
-          "Split Level",
-          "One and a half",
+  "general" :
+    [
+      {
+        "property_type" :
+          [
+          "Single family",
+          "Condo",
+          "Townhouse/Villa",
+          "Multi Family",
           "Other",
-        ],
-      "approximate_age" :
-        [
-          "Custom",
-        ],
-      "bedrooms_baths" :
-        [
-          "Custom",
-        ],
-      "door_faces" :
-        [
-          "North",
-          "Northeast",
-          "East",
-          "Southeast",
-          "South",
-          "Southwest",
-          "West",
-          "Northwest",
-        ],
-      "furnished" :
-        [
-          "Yes",
-          "No",
-          "Partially",
-        ],
-      "weather" :
-        [
-          "Sunny",
-          "Overcast",
-          "Drizzle",
-          "Raining",
-        ],
-      "temperature" :
-        [
-          "Hot",
-          "Warm",
-          "Cool",
-          "Cold",
-          "Not present",
-          "Not inspected",
-        ],
-      "soil_condition" :
-        [
-          "Dry",
-          "Damp",
-          "Wet",
-          "Snow",
-          "Frozen",
-          "Not present",
-          "Not inspected",
-        ],
-      "utilities_on_during_inspection" :
-        [
-          "Electric service",
-          "Gas service",
-          "Water service",
-          "Not present",
-          "Not inspected",
-        ],
-    }
-  ],
+          ],
+        "stories" :
+          [
+            "One",
+            "Two",
+            "Split Level",
+            "One and a half",
+            "Other",
+          ],
+        "approximate_age" :
+          [
+            "Custom",
+          ],
+        "bedrooms_baths" :
+          [
+            "Custom",
+          ],
+        "door_faces" :
+          [
+            "North",
+            "Northeast",
+            "East",
+            "Southeast",
+            "South",
+            "Southwest",
+            "West",
+            "Northwest",
+          ],
+        "furnished" :
+          [
+            "Yes",
+            "No",
+            "Partially",
+          ],
+        "temperature" :
+          [
+            "Hot",
+            "Warm",
+            "Cool",
+            "Cold",
+            "Not present",
+            "Not inspected",
+          ],
+        "soil_condition" :
+          [
+            "Dry",
+            "Damp",
+            "Wet",
+            "Snow",
+            "Frozen",
+            "Not present",
+            "Not inspected",
+          ],
+        "utilities_on_during_inspection" :
+          [
+            "Electric service",
+            "Gas service",
+            "Water service",
+            "Not present",
+            "Not inspected",
+          ],
+      }
+    ],
   "site" :
     [
       {
@@ -487,17 +477,1630 @@
             [
               {
                 "description" :
+                  [
+                    "3 Tab Shingle",
+                    "Concrete Tile",
+                    "Clay Barrel Tile",
+                    "Metal",
+                    "Gravel",
+                    "Roll Roofing",
+                  ],
+                "condition" :
+                  [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further Evaluation required",
+                      "Not present",
+                      "Not inspected",
+                  ],
               }
-            ]
+            ],
+        "approximate_roof_age" :
+            [
+              "0 - 2 years",
+              "3 - 5 years",
+              "6 - 8 years",
+              "9 - 10 years",
+              "11+ years",
+            ],
+        "ventilation_present" : "bool",
+        "ventilation" :
+          [
+            {
+              "description" :
+                [
+                  "Roof",
+                  "Soffit",
+                  "Power Ventilator",
+                  "Gable Ends",
+                  "Ridge Vents",
+                  "Turbine",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "vent_stacks" :
+          [
+            {
+              "description" :
+                [
+                  "Metal",
+                  "Plastic",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "chimney" :
+          [
+            {
+              "description" :
+                [
+                  "Masonry",
+                  "Brick",
+                  "Stone",
+                  "Metal",
+                  "Wood Frame",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "sky_lights" :
+          [
+            {
+              "description" : "bool",
+              "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+            }
+          ],
+        "flashings" :
+          [
+            {
+              "description" :
+                [
+                  "Metal",
+                  "Tar/Caulk",
+                  "Asphalt",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "soffit_fascia" :
+          [
+            {
+              "description" :
+              [
+                "Wood",
+                "Aluminum",
+                "Vinyl",
+              ],
+              "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+            }
+          ],
+        "gutters_downspouts" :
+          [
+            {
+              "description" :
+                [
+                  "Metal",
+                  "Plastic",
+                  "Hidden Box",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
       }
-
-    ]
-
-
-
-
-
-
-
-
+    ],
+  "structure" :
+    [
+      {
+        "foundation_types" :
+          [
+            {
+              "description" :
+                [
+                  "Basement",
+                  "Slab on Grade",
+                  "Floating Slab",
+                  "Crawl Space",
+                ],
+              "condition" :
+                [
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "foundation_material" :
+          [
+            {
+              "description" :
+                [
+                  "Poured Concrete",
+                  "Concrete Block",
+                  "Wood",
+                  "Stone",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "signs_of_water_penetration" : "bool",
+        "description_of_water_penetration" :
+          [
+            {
+              "description" :
+                [
+                  "Moisture",
+                  "Dampness",
+                  "Stains",
+                  "Efflorescence",
+                  "Mildew",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "prior_waterproofing" :
+          [
+            {
+              "description" :
+                [
+                  "Perimeter Drain",
+                  "Expoxy Injection",
+                  "Plastic Panels",
+                  "Surface Patches",
+                  "Gutter Type Drain",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "floor_structure" :
+          [
+            {
+              "description" :
+                [
+                  "Concrete Slab",
+                  "Wood Frame",
+                  "Engineered I-Joist",
+                  "Truss",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "subflooring" :
+          [
+            {
+              "description" :
+                [
+                  "Plywood",
+                  "Oriented Strand Board",
+                  "Solid Wood Plank",
+                  "Tongue and Groove Wood",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "wall_structure" :
+          [
+            {
+              "description" :
+                [
+                  "Full Masonry",
+                  "Wood Frame",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+      }
+    ],
+  "electrical" :
+    [
+      {
+          "type_of_service" :
+            [
+              {
+                "description" :
+                  [
+                    "Overhead",
+                    "Underground",
+                  ],
+                "condition" :
+                  [
+                    "Not Present",
+                    "Not inspected"
+                  ],
+              }
+            ],
+          "main_disconnect_location" :
+            [
+              {
+                "description" :
+                  [
+                    "Service Panel",
+                    "Meter box",
+                    "Split Bus Configuration",
+                  ],
+                "conditions" :
+                  [
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "service_panel_location" :
+            [
+              {
+                "description" :
+                  [
+                    "Exterior",
+                    "Basement",
+                    "Garage",
+                    "Interior",
+                  ],
+                "condition" :
+                  [
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "service_line_material" :
+            [
+              {
+                "description" :
+                  [
+                    "Copper",
+                    "Aluminum",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "service_voltage" :
+            [
+              {
+                "description" :
+                  [
+                    "120 volts",
+                    "240 volts",
+                  ],
+                "conditions" :
+                  [
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "service_amperage" :
+            [
+              {
+                "description" :
+                  [
+                    "60 amps",
+                    "100 amps",
+                    "125 amps",
+                    "150 amps",
+                    "200 amps",
+                    "225 amps",
+                  ],
+                "condition" :
+                  [
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "service_panel_ground" :
+            [
+              {
+                "description" :
+                  [
+                    "Cold water pipe",
+                    "Ground rod",
+                    "Well pump system",
+                    "Unknown not visible",
+                  ],
+                "condition" :
+                  [
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "branch_circuit_wiring" :
+            [
+              {
+                "description" :
+                  [
+                    "Non-Metallic shielded copper",
+                    "Metallic shielded copper",
+                    "Solid Aluminum",
+                    "Stranded copper",
+                    "Stranded Aluminum",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "overcurrent_protection" :
+            [
+              {
+                "description" :
+                  [
+                    "Breakers",
+                    "Fuses",
+                  ],
+                "conditions" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "gfci_afci_breakers" :
+            [
+              {
+                "description" : "bool",
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "smoke_detectors" :
+            [
+              {
+                "description" :
+                  [
+                    "9 volt battery type",
+                    "Lithium battery type",
+                    "Hard wired",
+                    "Hard wired, interconnected",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+      }
+    ],
+  "hvac" :
+    [
+      {
+        "system_type" :
+          [
+            {
+              "description" :
+              [
+              "Central split system",
+              "Package unit",
+              "Wall unit",
+              ],
+              "condition" :
+              [
+                "Not present",
+                "Not inspected",
+              ],
+            }
+          ],
+        "heating" :
+          [
+            {
+              "location" :
+              [
+                {
+                  "description" :
+                  [
+                  "Basement",
+                  "Hallway",
+                  "Bedroom",
+                  "Kitchen",
+                  "Attic",
+                  ],
+                "condition" :
+                  [
+                    "Not present",
+                    "Not inspected",
+                  ],
+                }
+              ],
+              "type_of_equipment" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Forced Air",
+                        "Heat Pump",
+                        "Gravity",
+                        "Boiler",
+                      ],
+                    "condition" :
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "manufacturer" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Carrier",
+                        "Emerson",
+                        "General Electric",
+                        "Lennox",
+                        "Maytag",
+                        "Trane",
+                        "Westinghouse",
+                        "Whirlpool",
+                        "York",
+                        "Not Present",
+                      ],
+                    "condition" :
+                      [
+                        "Not inspected",
+                      ]
+                  }
+                ],
+              "heating_fuel" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Electric",
+                        "Gas",
+                        "LP Gas",
+                      ],
+                    "condition" :
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+            "intput_BTUs" : "int",
+            "output_BTUs" : "int",
+            "approximate_age_of_heating" : "int",
+            "filter_type" :
+            [
+              {
+                "description" :
+                  [
+                    "Washable",
+                    "Disposable",
+                    "Electronic",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+            "output_temp" : "int",
+            "type_of_distribution" :
+              [
+                {
+                  "description" :
+                    [
+                      "Metal Ducting",
+                      "Flexible Ducting",
+                      "Pipes",
+                    ],
+                  "condition" :
+                    [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further Evaluation required",
+                      "Not present",
+                      "Not inspected",
+                    ],
+                }
+              ],
+          }
+        ],
+      "cooling" :
+      [
+        {
+          "energy_source" :
+            [
+              {
+                "description" :
+                  [
+                    "Electric",
+                    "Not Present",
+                    "Not Inspected",
+                  ],
+              }
+            ],
+          "type_of_equipment" :
+            [
+              {
+                "description" :
+                  [
+                    "Split system",
+                    "Evaporative",
+                  ],
+                "condition" :
+                  [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                  ],
+              }
+            ],
+          "condenser_make" :
+              [
+                {
+                  "description" :
+                    [
+                      "Carrier",
+                      "Emerson",
+                      "General Electric",
+                      "Lennox",
+                      "Maytag",
+                      "Trane",
+                      "Westinghouse",
+                      "Whirlpool",
+                      "York",
+                      "Not Present",
+                    ],
+                }
+              ],
+            "condenser_size" :
+              [
+                {
+                  "description" :
+                    [
+                      "12,000 BTU (1 ton)",
+                      "18,000 BTU (1.5 tons)",
+                      "24,000 BTU (2 tons)",
+                      "30,000 BTU (2.5 tons)",
+                      "36,000 BTU (3 tons)",
+                      "42,000 BTU (3.5 tons)",
+                      "48,000 BTU (4 tons)",
+                      "52,000 BTU (4.5 tons)",
+                      "60,000 BTU (5 tons)",
+                      "Not Present",
+                      "Not inspected",
+                    ],
+                }
+              ],
+            "condenser_approx_age" : "int",
+            "expansion_coil_make" :
+              [
+                "Carrier",
+                "Emerson",
+                "General Electric",
+                "Lennox",
+                "Maytag",
+                "Trane",
+                "Westinghouse",
+                "Whirlpool",
+                "York",
+                "Not Present",
+              ],
+            "expansion_coil_size" :
+              [
+                  {
+                    "description" :
+                      [
+                        "12,000 BTU (1 ton)",
+                        "18,000 BTU (1.5 tons)",
+                        "24,000 BTU (2 tons)",
+                        "30,000 BTU (2.5 tons)",
+                        "36,000 BTU (3 tons)",
+                        "42,000 BTU (3.5 tons)",
+                        "48,000 BTU (4 tons)",
+                        "52,000 BTU (4.5 tons)",
+                        "60,000 BTU (5 tons)",
+                        "Not Present",
+                        "Not inspected",
+                      ],
+                  }
+              ],
+            "expansion_coil_approx_make" : "int",
+            "condesate_drainage" :
+              [
+                {
+                  "description" :
+                    [
+                      "To floor drain",
+                      "Condensate pump",
+                      "To exterior",
+                      "To waste drain",
+                    ],
+                  "condition" :
+                    [
+                      "Satisfactory",
+                      "Marginal",
+                      "Repair or Replace",
+                      "Further Evaluation required",
+                      "Not present",
+                      "Not inspected",
+                    ]
+                }
+              ],
+            "ac_supply_air_temp" : "int",
+            "ac_return_air_temp" : "int",
+            "ac_temp_drop" : "int",
+        }
+      ],
+    }
+  ],
+  "plumbing" :
+    [
+      {
+        "water_service" :
+          [
+            {
+              "description" :
+              [
+                "Public",
+                "Well System",
+                "Unknown",
+                "Not Present",
+                "Not Inspected",
+              ],
+            }
+          ],
+        "supply_pump_material" :
+          [
+            {
+              "description" :
+                [
+                  "Copper",
+                  "Galvanized",
+                  "PEX",
+                  "PVC",
+                  "CPVC",
+                  "Polybutelyne",
+                  "Bronzite",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "location_of_water_shutoff" :
+          [
+            {
+              "description" :
+                [
+                  "At meter",
+                  "Basement",
+                  "Crawlspace",
+                  "Interior",
+                  "By Water heater",
+                  "Not located",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "sewer_system" :
+          [
+            {
+              "description" :
+                [
+                  "Public",
+                  "Septic System",
+                  "Unknown",
+                  "Not Present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "waste_pipe_material" :
+          [
+            {
+              "description" :
+                [
+                  "PVC",
+                  "Cast Iron",
+                  "Copper",
+                  "Galvanized Steel",
+                  "ABS Plastic",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "sump_pump" :
+          [
+            {
+              "description" :
+                [
+                  "Sealed Crock",
+                  "Standard Crock",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "location_of_fuel_shutoff" :
+          [
+            {
+              "description" :
+                [
+                  "At Meter",
+                  "Not Located",
+                ],
+              "condition" :
+                [
+                  "Not Present",
+                  "Not Inspected",
+                ],
+            }
+          ],
+        "water_heater" :
+            [
+              {
+                "manufacturer" :
+                  [
+                    {
+                      "description" :
+                        [
+                          "American Standard",
+                          "Rheem",
+                          "General Electric",
+                          "Whirlpool",
+                          "Kenmore",
+                          "Bosch",
+                          "Noritz",
+                          "Rinnai",
+                          "Takagi",
+                          "Ruud",
+                          "Not present",
+                          "Not inspected",
+                        ],
+                    }
+                  ],
+                "fuel" :
+                    [
+                      "Natural gas",
+                      "LP Gas",
+                      "Electric",
+                      "Not inspected",
+                    ],
+                "capacity" : "int",
+                "temp_pressure_relief_valve" :
+                  [
+                    {
+                      "description" :
+                        [
+                          "Present with Blow off leg",
+                          "Not present",
+                          "Not tested",
+                        ],
+                      "condition" :
+                        [
+                          "Satisfactory",
+                          "Marginal",
+                          "Repair or Replace",
+                          "Further Evaluation required",
+                          "Not present",
+                          "Not inspected",
+                        ],
+                    }
+                  ],
+                "fuel_disconnect" :
+                  [
+                    {
+                      "description" :
+                        [
+                          "In same room",
+                          "Within sight of equipment",
+                          "Not present",
+                          "Not inspected",
+                        ],
+                    }
+                  ],
+              }
+            ],
+      }
+    ],
+  "bathrooms" :
+    [
+      {
+        "location" : "string",
+        "bathtub" :
+          [
+            {
+              "description" :
+                [
+                  "Recessed",
+                  "Free standing",
+                  "Recirculating",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "shower" :
+          [
+            {
+              "description" :
+                [
+                  "Stall",
+                  "In tub",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "sinks" :
+          [
+            {
+              "description" :
+                [
+                  "Single Vanity",
+                  "Double Vanity",
+                  "Pedestal",
+                  "Vessel Bowl",
+                  "Wall Mounted",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "toilet" :
+          [
+            {
+              "description" :
+                [
+                  "Standard tank",
+                  "Low Rise tank",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "shower_walls" :
+          [
+            {
+              "description" :
+                [
+                  "Tile",
+                  "Marble",
+                  "Fiberglass",
+                  "Stone",
+                  "Acrylic",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "floor" :
+          [
+            {
+              "description" :
+              [
+                "Tile",
+                "Marble",
+                "Fiberglass",
+                "Stone",
+                "Acrylic",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+            }
+          ],
+        "ventilation_type" :
+          [
+            {
+              "description" :
+                [
+                  "Ventilator",
+                  "Window",
+                  "Wall Vent",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "gfci_protection" :
+          [
+            {
+              "description" :
+                [
+                  "Outlets",
+                  "Lights",
+                  "Recirculating tub",
+                ],
+              "condition" :
+                [
+                    "Satisfactory",
+                    "Marginal",
+                    "Repair or Replace",
+                    "Further Evaluation required",
+                    "Not present",
+                    "Not inspected",
+                ],
+            }
+          ],
+      }
+    ],
+  "kitchen" :
+    [
+      {
+        "cabinets" :
+        [
+          {
+            "description" :
+              [
+                "Wood",
+                "Laminated",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+        "countertops" :
+        [
+          {
+            "description" :
+              [
+                "Granite",
+                "Tile",
+                "Stone",
+                "Laminated",
+                "Wood",
+                "Stainless Steel",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+        "sink" :
+        [
+          {
+            "description" :
+              [
+                "single",
+                "double",
+              ],
+            "condition" :
+              [
+                "Satisfactory",
+                "Marginal",
+                "Repair or Replace",
+                "Further Evaluation required",
+                "Not present",
+                "Not inspected",
+              ],
+          }
+        ],
+        "appliances" :
+          [
+            {
+              "oven" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "cooktop" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "range_hood" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "refrigerator" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "dishwasher" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "microwave" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+              "disposal" :
+                [
+                  {
+                    "description" :
+                      [
+                        "Bosch",
+                        "Frigidaire",
+                        "General Electric",
+                        "Hotpoint",
+                        "Kenmore",
+                        "Kitchen Aid",
+                        "LG",
+                        "Maytag",
+                        "Samsung",
+                        "Sharp",
+                        "Sub-Zero",
+                        "Viking",
+                        "Whirlpool",
+                      ],
+                    "condition":
+                      [
+                        "Satisfactory",
+                        "Marginal",
+                        "Repair or Replace",
+                        "Further Evaluation required",
+                        "Not present",
+                        "Not inspected",
+                      ],
+                  }
+                ],
+            }
+          ]
+        }
+      ],
+  "laundry" :
+    [
+      {
+        "built_in_cabinets" :
+          [
+            {
+              "description" : "bool",
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "laundry_sink" :
+          [
+            {
+              "description" : "bool",
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "dryer_venting" :
+          [
+            {
+              "description" :
+                [
+                  "To Exterior",
+                  "To Crawl",
+                  "To Attic",
+                  "No Venting",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "gfci_protection" :
+          [
+            {
+              "description" :
+                [
+                  "To Exterior",
+                  "To Crawl",
+                  "To Attic",
+                  "No Venting",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "laundry_hookups" :
+          [
+            {
+              "description" : "bool",
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "washer" :
+          [
+            {
+              "description" :
+                [
+                  "Bosch",
+                  "Frigidaire",
+                  "General Electric",
+                  "Hotpoint",
+                  "Kenmore",
+                  "Kitchen Aid",
+                  "LG",
+                  "Maytag",
+                  "Samsung",
+                  "Sharp",
+                  "Sub-Zero",
+                  "Viking",
+                  "Whirlpool",
+                ],
+              "condition":
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+        "dryer" :
+          [
+            {
+              "description" :
+                [
+                  "Bosch",
+                  "Frigidaire",
+                  "General Electric",
+                  "Hotpoint",
+                  "Kenmore",
+                  "Kitchen Aid",
+                  "LG",
+                  "Maytag",
+                  "Samsung",
+                  "Sharp",
+                  "Sub-Zero",
+                  "Viking",
+                  "Whirlpool",
+                ],
+              "condition":
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+      }
+    ],
+  "interior" :
+    [
+      {
+        "floors" :
+          [
+            {
+              "description" :
+                [
+                  "Tile",
+                  "Marble",
+                  "Stone",
+                  "Carpet",
+                  "Wood",
+                  "Wood Laminate",
+                  "Vinyl",
+                  "Cork",
+                  "Linoleum",
+                  "Bamboo",
+                ],
+              "condition" :
+                [
+                  "Satisfactory",
+                  "Marginal",
+                  "Repair or Replace",
+                  "Further Evaluation required",
+                  "Not present",
+                  "Not inspected",
+                ],
+            }
+          ],
+      }
+    ],
 }
